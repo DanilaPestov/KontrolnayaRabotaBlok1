@@ -1,14 +1,14 @@
-﻿string[] mass = { "Hello", "2", "world", ":-)", "1", "22", "333", "4444", "5" };
+﻿Console.Clear();
+string[] mass = { "Hello", "2", "world", ":-)", "1", "22", "333", "4444", };
 
 string Print(string[] array)
 {
     string res = string.Empty;
-    res = "[ ";
+    Console.WriteLine("массив элементов: ");
     for (int i = 0; i < array.Length; i++)
     {
-        res += $"{array[i]} +  ";
+        res += $"{array[i]} ";
     }
-    res += " ]";
     return res;
 }
 
@@ -27,6 +27,9 @@ string[] Result(string[] array)
     return result;
 }
 
-Print(mass);
-Console.WriteLine("новый массив с 3 и менее символами: ");
+Console.WriteLine(Print(mass));
+Console.WriteLine();
+
+Console.WriteLine("массив, состоящий из 3 и менее символов: ");
 Result(mass);
+Console.WriteLine();
