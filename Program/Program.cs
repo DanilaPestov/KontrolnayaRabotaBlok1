@@ -11,7 +11,6 @@ string Print(string[] array)
     }
     return res;
 }
-
 string[] Result(string[] array)
 {
     string[] result = new string[array.Length];
